@@ -65,13 +65,13 @@ h2 {
 /* Candidate button styles */
 .candidateButton {
     background-color: white;
-    color: black;
-    padding: 10px 20px;
-    /* border: black; */
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease-in-out;
+    transition: transform 0.3s;
 }
 
 .candidateButton:hover {
