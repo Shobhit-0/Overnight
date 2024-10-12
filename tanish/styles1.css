@@ -3,64 +3,92 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    position: relative;
 }
 
-header {
+nav {
+    width: 100%;
+    background-color: #007BFF;
+    padding: 15px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+}
+
+nav h2 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+nav button {
     background-color: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px; /* Adding space for the navbar */
 }
 
 h1 {
     font-size: 2.5em;
-    margin-left: 20px;
     color: #1d1d1d;
 }
 
 .buttons {
-    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 button {
     padding: 10px 20px;
     font-size: 1em;
-    margin-left: 10px;
+    margin: 0 10px; /* Margin on left and right for spacing */
     border: none;
     cursor: pointer;
 }
 
-/* Style for Vote Now Button */
 .vote-now {
-    background-color: #007BFF;  /* Blue color */
-    color: white;               /* White text */
-    border-radius: 5px;         /* Rounded corners */
-    border: none;               /* No border */
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
 }
 
-/* Style for Sign in as Admin Button */
 .admin-login {
-    background-color: white;    /* White background */
-    color: black;               /* Black text */
-    border: 2px solid black;    /* Black border */
-    border-radius: 5px;         /* Rounded corners */
-}
-
-.content {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
+    background-color: white;
+    color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
 }
 
 .image-gallery {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    margin-top: 30px; /* Space between buttons and images */
+    width: 100%; /* Make sure it stretches across the full width */
+    padding: 0 10px;
 }
 
 .image-gallery img {
-    width: 150px;
+    width: 22vw; /* Responsive width based on viewport width */
     height: auto;
+    max-height: 25vh; /* Ensure images cover at least 25% of the viewport height */
     border-radius: 10px;
+    object-fit: cover; /* Ensures the images maintain aspect ratio and cover the area */
 }
