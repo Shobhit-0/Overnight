@@ -1,0 +1,87 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav button:hover {
+    background-color: #003d82;
+}
+
+/* Main content styles */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Candidate buttons container styles */
+.candidates {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* This ensures buttons wrap to the next line if they overflow */
+}
+
+/* Candidate button styles */
+.candidateButton {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    /* border: black; */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.candidateButton:hover {
+    background-color: #12bd37;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}

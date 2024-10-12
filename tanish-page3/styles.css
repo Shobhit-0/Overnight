@@ -20,13 +20,13 @@ nav button {
     margin: 0 10px;
     padding: 10px 15px;
     border: none;
-    color: white;
-    background-color: #0056b3;
+    color:black;
+    background-color: white;
     cursor: pointer;
 }
 
 nav button:hover {
-    background-color: #004494;
+    background-color: #a8c8ed;
 }
 
 main {
@@ -44,14 +44,14 @@ main {
     margin: 10px;
     padding: 15px 30px;
     font-size: 16px;
-    border: none;
-    color: white;
-    background-color: #28a745;
+
+    color: black;
+    background-color: white;
     cursor: pointer;
 }
 
 .candidateButton:hover {
-    background-color: #218838;
+    background-color: #23a721;
 }
 
 footer {
