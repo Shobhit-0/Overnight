@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30;
+    padding: 30;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-left: 20px;
+    color: #1d1d1d;
+}
+
+.buttons {
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.vote-now {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+.admin-login {
+    background-color: white;
+    color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-left: 20px;
+    color: #1d1d1d;
+}
+
+.buttons {
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for Vote Now Button */
+.vote-now {
+    background-color: #007BFF;  /* Blue color */
+    color: white;               /* White text */
+    border-radius: 5px;         /* Rounded corners */
+    border: none;               /* No border */
+}
+
+/* Style for Sign in as Admin Button */
+.admin-login {
+    background-color: white;    /* White background */
+    color: black;               /* Black text */
+    border: 2px solid black;    /* Black border */
+    border-radius: 5px;         /* Rounded corners */
+}
+
+.content {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
