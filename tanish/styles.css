@@ -8,40 +8,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full height of the viewport */
-    position: relative;
-}
-
-nav {
-    width: 100%;
-    background-color: #007BFF;
-    padding: 15px 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h2 {
-    color: white;
-    font-size: 1.5em;
-    margin: 0;
-}
-
-nav button {
-    background-color: white;
-    color: #007BFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    margin-top: 60px; /* Adding space for the navbar */
 }
 
 h1 {
@@ -80,15 +51,11 @@ button {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 30px; /* Space between buttons and images */
-    width: 100%; /* Make sure it stretches across the full width */
-    padding: 0 10px;
+    margin-top: 20px; /* Space between buttons and images */
 }
 
 .image-gallery img {
-    width: 22vw; /* Responsive width based on viewport width */
+    width: 150px;
     height: auto;
-    max-height: 25vh; /* Ensure images cover at least 25% of the viewport height */
     border-radius: 10px;
-    object-fit: cover; /* Ensures the images maintain aspect ratio and cover the area */
 }

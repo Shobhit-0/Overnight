@@ -86,9 +86,9 @@ button {
 }
 
 .image-gallery img {
-    width: 22vw; /* Responsive width based on viewport width */
-    height: auto;
-    max-height: 25vh; /* Ensure images cover at least 25% of the viewport height */
+    width: 33vw; /* Responsive width based on viewport width */
+    height: 250px;
+    max-height: 50vh; /* Ensure images cover at least 25% of the viewport height */
     border-radius: 10px;
     object-fit: cover; /* Ensures the images maintain aspect ratio and cover the area */
 }
