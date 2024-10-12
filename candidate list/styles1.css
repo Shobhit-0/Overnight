@@ -7,7 +7,15 @@
 
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/image.png'); /* Adjust path if necessary */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
+
 
 /* Header styles */
 header {
@@ -35,6 +43,7 @@ nav button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    box-shadow: grey;
     transition: background-color 0.3s ease-in-out;
 }
 
