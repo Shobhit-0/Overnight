@@ -1,0 +1,2 @@
+Apache web server
+phpmyadmin
