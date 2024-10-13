@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column; /* Stack header and content */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevent scrollbars */
+            background: linear-gradient(270deg, #007bff, #00cffe, #007bff); /* Gradient background */
+            background-size: 600% 600%; /* Larger background area for animation */
+            animation: gradient 15s ease infinite; /* Animation */
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            align-self: center;
+            
+            /* background-color: rgba(0, 123, 255, 0.8); Semi-transparent blue header */
+            color: white;
+            padding: 20px ; /* Vertical padding for header */
+            position: fixed; /* Fixed position at the top */
+            width: 100%; /* Full width */
+            z-index: 1; /* Ensure header is above other content */
+            padding-left: 450px;/* Center text */
+            top: 0; /* Position at the top */
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin */
+            font-size: 2.5rem; /* Larger font size for header */
+            padding: 0;
+        }
+
+        .results-container {
+            margin-top: 80px; /* Space for the fixed header */
+            position: relative; /* Positioning for stacking context */
+            z-index: 1; /* Ensure results are above the background */
+            width: 100%; /* Full width */
+            max-width: 600px; /* Limit maximum width for better layout */
+        }
+
+        .result {
+            background-color: white; /* White background for results */
+            padding: 15px;
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin-bottom: 20px; /* Spacing between result boxes */
+        }
+
+        .result h3 {
+            margin: 0;
+            font-size: 1.5rem; /* Font size for result title */
+        }
+
+        .result p {
+            font-size: 1.2rem; /* Font size for result description */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Online Voter Platform</h1>
+</header>
+<h1 class ="mb-5 text-center">{{ question.question_text }}</h1>
+
+<ul class ="list-group mb-5">
+	{% for choice in question.choice_set.all %}
+	<li class ="list-group-item">
+		{{ choice.choice_text }} <span class ="badge badge-success float-right">{{ choice.votes }}
+			vote{{ choice.votes | pluralize }}</span>
+	</li>
+	{% endfor %}
+</ul>
+
+<a class ="btn btn-secondary" href ="{% url 'polls:index' %}">Back To Polls</a>
+<!-- <a class ="btn btn-dark" href ="{% url 'polls:detail' question.id %}">Vote again?</a> -->
+{% endblock %}

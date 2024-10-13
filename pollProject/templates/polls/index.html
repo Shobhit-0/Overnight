@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pollApp/css/styles2.css' %}">
+    
+</head>
+<body>
+    <header>
+        <h1>Online Voting Platform</h1>
+        <nav>
+            
+            <a href="{% url 'index' %}">
+                <button id="backtoelection">Back to home</button></a>
+            <a href="{% url 'admin:index' %}">
+                <button id="adminLoginButton">Admin Login</button></a>
+            
+            <!-- <button id="contactButton">Contact Us</button> -->
+        </nav>
+        <!-- <a class ="btn btn-secondary btn-sm mb-3" href ="{% url 'polls:index' %}">Back To Polls</a> -->
+    </header>
+    
+    {% if latest_question_list %}
+    {% for question in latest_question_list %}
+        <div class="container" >
+        
+                <div class="election-selection">
+                    <div class="election-card">
+                        <h3>{{ question.question_text }}</h3>
+                <div class="button-container">
+                    <a href ="{% url 'polls:detail' question.id %}">
+                        <button class="button"  class ="btn btn-primary btn-sm">Proceed to Vote</button></a>
+                </div>
+        </div>
+    {% endfor %}
+    {% else %}
+    <p>No polls available</p>
+    {% endif %}
+
+
+</body>
+</html>
+

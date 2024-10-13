@@ -1,0 +1,97 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    padding: 0;
+    background-image: url('/static/pollApp/css/images/bg.jpg'); /* Adjust path if necessary */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav button:hover {
+    background-color: #003d82;
+}
+
+/* Main content styles */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+   
+}
+
+/* Candidate buttons container styles */
+.candidates {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* This ensures buttons wrap to the next line if they overflow */
+}
+
+/* Candidate button styles */
+.candidateButton {
+    background-color: white;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.candidateButton:hover {
+    background-color: #12bd37;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
